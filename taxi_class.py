@@ -93,6 +93,4 @@ class SilverServiceTaxi(Taxi):
 
 
 
-        # return "{}, ${:.2f}/km, {}km on current fare".format(super().__str__(), self.price_per_km,
-        #                                                  self.current_fare_distance)
 

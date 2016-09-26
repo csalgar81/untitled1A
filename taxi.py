@@ -17,4 +17,4 @@ print(pont)
 # test for SilvereService
 mazda = SilverServiceTaxi('mazda',200,2)
 mazda.drive(10)
-print(mazda.get_far
+print(mazda.get_fare())
