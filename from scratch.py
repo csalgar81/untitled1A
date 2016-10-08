@@ -15,6 +15,7 @@ def main():
             chosen_taxi = int(input("Choose taxi: "))
             print("Bill to date: ${:<.2f}".format(bill_to_date))
         elif user_input == 'd':
+            taxis[chosen_taxi].start_fare()
             distance = int(input("Drive how far ? "))
             taxis[chosen_taxi].drive(distance)
             trip_cost = taxis[chosen_taxi].get_fare()
@@ -26,8 +27,6 @@ def main():
         user_input = input(">>> ")
     print("Taxis are now:")
     print_taxis_available(taxis)
-
-
 
 
 def print_taxis_available(taxis):
